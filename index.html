@@ -7,7 +7,7 @@
   add links to recent project buttons 
   add href to buttons at the top 
   add dark mode toggle 
-  add resume section --> 
+  add resume section -->
 
 <head class="">
   <meta charset="UTF-8">
@@ -20,12 +20,12 @@
   <title>practicing with tailwind</title>
 </head>
 
-<body class="w-screen sm:w-auto relative">
+<body class="w-screen sm:w-auto relative scroll-smooth scroll-auto" id="backToTop-section">
 
   <div>
     <div>
       <h1
-        class="text-3xl pt-2 flex justify-center underline underline-offset-3 mb-1 p-1 bg-gradient-to-r from-cyan-400 to-blue-500">
+        class="text-3xl pt-2 flex justify-center underline underline-offset-3 p-4 bg-gradient-to-r from-cyan-400 to-blue-500">
         Tailwind
         CSS Portfolio</h1>
     </div>
@@ -34,33 +34,16 @@
   <!-- background image starts here -->
   <div class="bg-[url('./images/bg-img-1.jpg')] bg-cover">
     <div class="">
-      <div class="flex justify-center bg-slate-100 p-1 ">
+      <div class="flex justify-center bg-black text-white p-1 ">
         <ul class="flex flex-wrap space-x-4 pb-1 md:max-xl:flex">
-          <li><a href="#" class=" hover:bg-slate-200 font-bold p-2 text-lg">About</a href=""></li>
-          <li><a href="#" class=" hover:bg-slate-200 font-bold p-2 text-lg">Projects</a href=""></li>
-          <li><a href="#" class=" hover:bg-slate-200 font-bold p-2 text-lg">Contact</a href=""></li>
-          <li><a href="#" class=" hover:bg-slate-200 font-bold p-2 text-lg">Resume</a href=""></li>
-          <li><a href="#" class=" hover:bg-slate-200 font-bold p-2 text-lg">Password Generator</a href=""></li>
-          <button class="hover:bg-slate-200 font-bold p-none text-lg">Toggle Darkmode</button>
+          <li><a href="#projects-section " class=" hover:bg-slate-600 font-bold p-4 text-lg  ">Projects</a href=""></li>
+          <li><a href="#contact-section" class=" hover:bg-slate-600 font-bold p-4 text-lg ">Contact</a href=""></li>
+          <li><a href="#resume-section" class=" hover:bg-slate-600 font-bold p-4 text-lg ">Resume</a href=""></li>
+          <li><a href="#password-section" class=" hover:bg-slate-600 font-bold p-4 text-lg ">Password Generator</a
+              href=""></li>
         </ul>
       </div>
-
-
-
-      <!-- dropdown menu in progress -->
-      <!-- <div id="showMenuOnHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-          <ul class="py-1 text-md text-gray-600" aria-labelledby="dropDownHoverBtn">
-            <li>
-              <a href="#" role="menuitem" class="block px-7 py-2 hover:bg-gray-100">Project Link 1</a>
-            </li>
-            <li>
-              <a href="#" role="menuitem" class="block px-7 py-2 hover:bg-gray-100">Project Link 1</a>
-            </li>
-            <li>
-              <a href="#" role="menuitem" class="block px-7 py-2 hover:bg-gray-100">Project Link 1</a>
-            </li>
-          </ul>
-        </div> -->
+      <!-- for dropdown menu -- use daisyui -->
 
 
     </div>
@@ -95,35 +78,12 @@
 
 
 
-  <div>
-    <h2 class="font-semibold text-xl flex justify-center my-4 mb-8 text-slate-800 pt-12">Explore my recent Projects!
-    </h2>
-  </div>
-  <div class="animatingProjectBtns flex space-x-4 justify-center space-x-8">
-    <div class="group">
-      <div class="overflow-hidden group">
-        <a target="blank" href=""><button
-            class="bg-sky-400 py-2 px-4 hover:bg-slate-700 rounded-lg text-slate-50 font-semibold hover:block">project
-            1</button></a>
-      </div>
-    </div>
-    <div>
-      <a target="blank" href=""><button
-          class="bg-sky-400 py-2 px-4 hover:bg-slate-700 rounded-lg text-slate-50 font-semibold">project
-          2</button></a>
-    </div>
-    <div>
-      <a target="blank" href=""><button
-          class="bg-sky-400 py-2 px-4 hover:bg-slate-700 rounded-lg text-slate-50 font-semibold">project
-          3</button></a>
-    </div>
-  </div>
-  <br>
 
 
-  <div>
+
+  <div class="">
     <div>
-      <h2 class="font-semibold text-xl flex justify-center my-4">10+ Projects Completed!</h2>
+      <h2 class="font-semibold text-xl flex justify-center p-4 bg-slate-200 ">10+ Projects Completed!</h2>
     </div>
   </div>
 
@@ -261,7 +221,7 @@
         <div class="size-full group h-max">
           <div class="relative overflow-hidden size-full">
             <img class="size-full group-hover:opacity-80 transition-all rounded-lg h-[31rem]"
-              src="./images/ecommerce-mock-img.png" alt="image of project 5">
+              src="./images/ecommerce.png" alt="image of project 5">
             <div
               class="absolute h-fit w-full bg-black/60   -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 space-x-4">
               <p class="text-white/100 text-left text-sm font-semibold pt-none p-2 tracking-wider">This is an ongoing
@@ -289,48 +249,23 @@
         <div class="size-full group h-max">
           <div class="relative overflow-hidden size-full">
             <img class="size-full group-hover:opacity-80 transition-all rounded-lg h-[31rem]"
-              src="./images/partha-port-img.png" alt="coming soon">
+              src="./images/portfolio-v3-img.png" alt="image of my new up and coming portfolio">
             <div
               class="absolute h-fit w-full bg-black/60   -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 space-x-4">
-              <p class="text-white/100 text-left text-sm font-semibold pt-none p-2 tracking-wider">This is a personal
-                project that recently
-                went live. It is a professional portfolio that I created to showcase my skills as a web developer. It
-                was
-                done in the span of 2-3 weeks as a novice. Because this is my first portfolio utilizing HTML, CSS, and
-                JS, it loads slow, and that
-                is why I built a new portfolio with the foundation of Tailwind CSS.
+              <p class="text-white/100 text-left text-sm font-semibold pt-none p-2 tracking-wider">This is another
+                portfolio that I decided to create. A better, faster-loading, more professional, and mobile responsive
+                design. It utilizes
+                HTML, CSS, JS, React, Next.js, and Tailwind css.
               </p>
-              <a target='blank' href=''>
+              <a target='' href=''>
                 <button class="bg-sky-400 hover:bg-slate-700 text-slate-50 p-2 rounded-lg mt-4">Github Repo</button>
               </a>
-              <a target='blank' href="">
+              <a target='' href="">
                 <button class="bg-sky-400 hover:bg-slate-700 text-slate-50 p-2 rounded-lg mb-2">Project Link</button>
               </a>
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,7 +283,7 @@
   <!-- IMPORTANT*** use multiple divs inside divs to center align and put elements on top of each othter -->
 
   <!-- for contact section -->
-  <div class="box-border  justify-center items-center  text-2xl mt-[-180px] relative">
+  <div id="contact-section" class="box-border  justify-center items-center  text-2xl mt-[-180px] relative">
     <h1 class="font-semibold text-2xl text-center mt-24 ">Feel free to contact me!</h1>
     <div class="flex justify-center relative">
       <div>
@@ -386,7 +321,7 @@
 
 
   <!-- for resume download section -->
-  <div class="flex justify-center mt-28 ">
+  <div id="resume-section" class="flex justify-center mt-28 bg-slate-200 p-8">
     <div class="items-center">
       <h2 class="font-semibold text-2xl">Want to learn more? Download my Resume below!</h2>
       <a href="./assets/Partha Rana Web Developer Resume PDF.pdf" download="Web Dev Resume">
@@ -396,7 +331,7 @@
             class=""></span>
         </button>
       </a>
-      <div class="mt-16 space-y-2 mt-24">
+      <div class="mt-16 space-y-2 mt-24 bg-slate-200">
         <div class="flex justify-center mr-4">
           <h3 class="font-semibold text-2xl">You can also contact me at:</h3>
         </div>
@@ -419,12 +354,9 @@
     </div>
   </div>
 
-
-
-
   <!-- ----------------------------------------------------------------------------------------------------------- -->
-   <!-- for generating a random password -->
-  <div class="flex justify-center mt-28">
+  <!-- for generating a random password -->
+  <div id="password-section" class="flex justify-center mt-28">
     <div class="items-center">
       <h2 class="font-semibold text-xl flex justify-center my-4">Need a password? Click Generate!</h2>
       <button type="button" onclick="genRandPW()"
@@ -433,9 +365,6 @@
     </div>
   </div>
 
-
-
-
   <!-- change font size?? -->
   <!-- about section bg-slate-900 -->
   <!-- content changes? -->
@@ -443,29 +372,19 @@
   <!-- change content width -- about section  -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- back to top button -->
+  <a href="#backToTop-section" class=" hover:bg-slate-200 font-bold p-2 text-lg flex justify-center ">Back to Top</a>
 
   <!-- footer starts here -->
 
   <div>
-    <div class="bg-[url('./images/bg-img-4.jpg')] bg-cover pb-1">
-      <div class="mt-44 flex justify-center font-semibold text-xl text-slate-100">
-        <h4>All Rights Reserved</h4>
+
+    <div class="mt-20 bg-[url('./images/bg-img-4.jpg')] bg-cover pb-1">
+      <div class=" flex justify-center font-semibold pt-2 text-md text-slate-100">
         <h4>©️Copyright Partha Rana 2024 </h4>
       </div>
-      <h4 class="flex justify-center font-semibold text-xl text-slate-100">Made via Tailwind CSS, HTML, and JS</h4>
-      <h4 class="flex justify-center font-semibold mb-8 text-xl text-slate-100">Hosted on Netlify</h4>
+      <h4 class="flex justify-center font-semibold text-slate-100 text-sm">Made via Tailwind CSS, HTML, and JS</h4>
+      <h4 class="flex justify-center font-semibold pb-2 text-slate-100 text-sm">Hosted via GitHub Pages</h4>
     </div>
   </div>
 
