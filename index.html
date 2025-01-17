@@ -35,7 +35,7 @@
   <div class="bg-[url('./images/bg-img-1.jpg')] bg-cover">
     <div class="">
       <div class="flex justify-center bg-black text-white p-1 ">
-        <ul class="flex flex-wrap space-x-4 pb-1 md:max-xl:flex">
+        <ul class="flex flex-wrap space-x-4 pb-1 md:max-xl:flex" id="top-btns">
           <li><a href="#projects-section " class=" hover:bg-slate-600 font-bold p-4 text-lg  ">Projects</a href=""></li>
           <li><a href="#contact-section" class=" hover:bg-slate-600 font-bold p-4 text-lg ">Contact</a href=""></li>
           <li><a href="#resume-section" class=" hover:bg-slate-600 font-bold p-4 text-lg ">Resume</a href=""></li>
@@ -61,10 +61,10 @@
 
 
     <!-- for about me section -->
-    <div class=" rounded-lg shadow-md pb-8 sm:w-screen md:w-screen lg-w-screen xl:w-screen text-slate-100">
-      <h2 class="font-semibold text-2xl flex justify-center mt-4">Hello, I am Partha Rana, an aspiring Web
+    <div class=" rounded-lg shadow-md pb-8 sm:w-screen md:w-screen lg-w-screen xl:w-screen text-slate-100" >
+      <h2 class="font-semibold text-2xl flex justify-center mt-4" id="about-info">Hello, I am Partha Rana, an aspiring Web
         Developer!</h2>
-      <p class="text-slate-100 mt-2 px-8 p-2">Currently I am refining my skills in HTML, CSS, Javascript, React,
+      <p id="info-para" class="text-slate-100 mt-2 px-8 p-2">Currently I am refining my skills in HTML, CSS, Javascript, React,
         Tailwind CSS, and
         finally Bootstrap. I figured, I love building all kinds of things, especially that people can use! That is where
         my passion for coding, specifically, web development originated! I have the unshakeable faith that I will be a
@@ -101,9 +101,9 @@
 
 
       <!-- project card section starts here -->
-      <div class="grid grid-cols-2 gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mt-16">
-        <div class="size-full group h-max">
-          <div class="relative overflow-hidden size-full">
+      <div class="grid grid-cols-1 gap-8  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mt-8" id="grid-section">
+        <div class="size-full group h-max ">
+          <div class="relative overflow-hidden size-full ">
             <img class="size-full group-hover:opacity-80 transition-all rounded-lg h-[31rem]" src="./images/pp-img.png"
               alt="image of project 1">
             <div
@@ -285,11 +285,11 @@
   <!-- for contact section -->
   <div id="contact-section" class="box-border  justify-center items-center  text-2xl mt-[-180px] relative">
     <h1 class="font-semibold text-2xl text-center mt-24 ">Feel free to contact me!</h1>
-    <div class="flex justify-center relative">
+    <div class="flex justify-center relative" id="contactme-section">
       <div>
         <div
-          class="flex justify-center box-border border-2 p-16 rounded-lg mt-16 bg-[url('./images/bg-img-4.jpg')] bg-cover">
-          <form class="space-y-4 " action="https://api.web3forms.com/submit" method="POST" id="form">
+          class="flex justify-center box-border border-2 p-10 rounded-lg mt-16 bg-[url('./images/bg-img-4.jpg')] bg-cover">
+          <form class="space-y-4" action="https://api.web3forms.com/submit" method="POST" id="form">
             <div>
               <h1 class="font-semibold text-2xl flex justify-center pb-4 text-slate-100">Get in Touch!</h1>
             </div>
@@ -304,7 +304,7 @@
             </div>
             <div class="">
               <textarea placeholder="Your Message" name="message" id="" autocomplete="false" required
-                class="border border-neutral-500 p-2 pr-10 relative"></textarea>
+                class="border border-neutral-500 p-2 size-full relative"></textarea>
 
             </div>
             <div>
@@ -323,12 +323,11 @@
   <!-- for resume download section -->
   <div id="resume-section" class="flex justify-center mt-28 bg-slate-200 p-8">
     <div class="items-center">
-      <h2 class="font-semibold text-2xl">Want to learn more? Download my Resume below!</h2>
-      <a href="./assets/Partha Rana Web Developer Resume PDF.pdf" download="Web Dev Resume">
-        <button
-          class="bg-sky-400 py-2 px-4 hover:scale-110 rounded-lg text-slate-50 font-semibold hover:block hover:scale-110 mt-2 relative ml-64 focus:outline-slate-200">
-          <img class="size-8" src="./images/download-icon-img.png" alt="image of the download symbol"> <span
-            class=""></span>
+      <h2 class="font-semibold text-2xl" id="learn-more-p">Want to learn more? Download my Resume!</h2>
+      <a href="./assets/Partha Rana Web Developer Resume PDF.pdf" download="Partha'a Web Dev Resume">
+        <button id="resume-btn"
+          class="bg-sky-400 py-2 ml-64 px-4 hover:scale-110 rounded-lg text-slate-50 font-semibold hover:scale-110 mt-2 relative focus:outline-slate-200">
+          <img class="size-8" src="./images/download-icon-img.png" alt="image of the download symbol">
         </button>
       </a>
       <div class="mt-16 space-y-2 mt-24 bg-slate-200">
@@ -371,33 +370,9 @@
 
   <!-- change content width -- about section  -->
 
-
-<<<<<<< HEAD
-  <!-- back to top button -->
-  <a href="#backToTop-section" class=" hover:bg-slate-200 font-bold p-2 text-lg flex justify-center ">Back to Top</a>
-=======
-
-
-
-
-
-
-
-
   <!-- back to top button -->
   <a href="#backToTop-section" class=" hover:bg-slate-200 font-bold p-2 text-lg flex justify-center ">Back to Top</a>
 
-
-
-
-
-
-
-
-
-
-
->>>>>>> 3e93432a6a913633fc23f6defeb60d5c2d94d240
 
   <!-- footer starts here -->
 

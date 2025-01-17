@@ -3,13 +3,38 @@
     
 }
 
-@keyframes projectBtns {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
+@media (width < 600px) {
+    #grid-section{
+        grid-column: 1;
+    
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    #top-btns{
+        display: flex;
+        justify-content: center;
     }
+
+    #about-info{
+        text-align: center;
+        width: auto;
+    }
+
+    #learn-more-p{
+        text-align: center;
+    }
+
+    #resume-btn{
+        right: 100px;
+        position: relative;
+    }
+
+    #info-para{
+        text-align: center;
+    }
+
+
 }
+
+
+
+    
